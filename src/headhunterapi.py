@@ -18,8 +18,8 @@ class HeadHunterAPI(Parser):
         """
         :param employer_id: возможно передавать идентификационный номер
         для поиска вакансий у конкретного работодателя
-        :param keyword: слово для поиска по вакансиям на ХХ.ру
-        :return: список вакансий пришедший с АПИ ХХ.р
+        :param keyword: слово для поиска по вакансиям на HH.ru
+        :return: список вакансий пришедший с API HH.ru
         """
         self.url = 'https://api.hh.ru/vacancies'
         self.params['page'] = 0
@@ -38,8 +38,8 @@ class HeadHunterAPI(Parser):
 
     def load_companies(self, company_ids: list):
         """
-        :param company_ids: список айди вакансий для их поиска на ХХ.ру
-        :return: список с информацией о компаниях пришедший с АПИ ХХ.р
+        :param company_ids: список айди вакансий для их поиска на HH.ru
+        :return: список с информацией о компаниях пришедший с API HH.ru
         """
         for company_id in company_ids:
             self.url = 'https://api.hh.ru/employers/' + company_id
