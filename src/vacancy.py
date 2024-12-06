@@ -90,7 +90,7 @@ class Vacancy:
         """Валидатор для стороковых значений"""
         if value:
             return value
-        return 'информация не была найдена'
+        return 'информация не найдена'
 
     @staticmethod
     def check_data_int(value):
