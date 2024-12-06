@@ -3,7 +3,7 @@ from src.utils import user_interaction, load_vacancies, save_data, \
 
 
 def main():
-    print("Доброго времени суток, вы запустили программу "
+    print("Приветствую дорогой пользователь, вы запустили программу "
           "для упрощенного общения с вакансиями")
     user_input = ''
     while user_input != 'exit':
